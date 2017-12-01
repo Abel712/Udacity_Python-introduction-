@@ -89,7 +89,7 @@ def task5(loop_time_number=3):
 	#def_var area:
 	feedback_movie_information = ""
 	feedback_movie_information_list = []
-	print("请输入三种类型（以逗号间隔，有误输入均更正为默认搜索，即剧情，文艺，喜剧）：{}。".format("、".join(location_all_list)))
+	print("请输入三种类型（以逗号间隔，有误输入均更正为默认搜索，即剧情，文艺，喜剧）：{}。".format("、".join(category_all_list)))
 	category = str(input())
 	category = category.split('，')
 	if len(category) != 3:
