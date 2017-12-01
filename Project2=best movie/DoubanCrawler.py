@@ -106,9 +106,7 @@ def task5(loop_time_number=3):
 				feedback_movie_information_list.append(m_cache_dict_thistime[i_jump_time])
 				with open('movies.csv','w') as f:
 					for i_list in range(0,len(feedback_movie_information_list)):
-						print(feedback_movie_information_list[i_list])
 						f.write(str(",".join(feedback_movie_information_list[i_list]))+"\n")
-	print(feedback_movie_information_list)
 	return "反馈：已将爬取内容输出到movies.csv文件中。"
 
 #Task6，基于.csv进行分析，分析结果写入output.txt
